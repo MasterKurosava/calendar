@@ -8,9 +8,9 @@
   margin:  0 4px;
 }
 .calendar table{
-  table-layout: fixed;
+  table-layout:fixed;
   border-collapse: separate;
-  border-spacing: 0;
+  border-spacing:5px;
   margin: auto;
 }
 .calendar th{
@@ -23,6 +23,7 @@
   vertical-align: middle;
   text-align: center;
   border:2px solid transparent;
+  max-width: 2ch;
 }
 .calendar .day:hover{
   background-color: #eaeaea;
@@ -42,4 +43,13 @@
   color: black;
   background-color: #eaeaea;
   border: 2px solid lightblue;
+}
+.calendar .pastDays{
+  color: rgba(128, 128, 128, 0.774);
+}
+.calendar .pastDays:hover{
+  background-color: transparent;
+}
+.calendar .grades{
+  color: red;
 }

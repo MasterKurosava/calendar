@@ -1,33 +1,83 @@
 .contextMenuBlock{
-  margin: 0;
   position: absolute;
-  width: fit-content;
-  min-width: 150px;
-  height: fit-content;
-  background-color: white;
-}
-.contextMenuBlock ul{
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  list-style: none;
-  border:3px solid dodgerblue;
-  border-radius: 5px;
-}
-.contextMenuBlock ul li{
+  width: 250px;
   display: flex;
-  height: 20px;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: black;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+}
+.contextMenuBlock p{
+  padding: 0;
+  margin: 0 0 10px 0;
   font-weight: 600;
-  margin: 0;
+  text-align: center;
+  color: dodgerblue;
 }
-.contextMenuBlock ul li:last-child{
-  border-bottom: none
+.contextMenuBlock textarea{
+  overflow-y: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  height: fit-content;
+  max-height: 200px;
+  resize: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid dodgerblue;
 }
-.contextMenuBlock ul li:hover{
+.contextMenuBlock textarea:focus, .contextMenuBlock button:focus{
+  outline: none;
+}
+.contextMenuBlock .buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contextMenuBlock button{
+  width: 90px;
+  letter-spacing: 1px;
+  margin: 5px auto 0 auto;
+  background-color: white;
+  color: dodgerblue;
+  border:  1px solid dodgerblue ;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.contextMenuBlock button:hover{
+  background-color: dodgerblue;
+  font-weight: 600;
   color: white;
-  background-color:dodgerblue;
+}
+.contextMenuBlock .deleteBtn{
+  width: 40px;
+  color: red;
+  border: 1px solid red;
+}
+.contextMenuBlock .deleteBtn:hover{
+  color: white;
+  background-color: red;
+}
+.contextMenuBlock .error{
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.contextMenuBlock .success{
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+}
+.contextMenuBlock .error:hover{
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.contextMenuBlock .success:hover{
+  background-color: green;
+  border: 1px solid green;
+  color: white;
 }
